@@ -1,0 +1,33 @@
+<div class="containerStyle">
+  <section>
+    <h1>Angular | Sawo Form Example {{isLoggedIn}}</h1>
+      <div class="loggedin" *ngIf="isLoggedIn">
+        <div
+  style="
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    margin: auto;
+  "
+>
+  <h2 class="text-center">
+    You have logged in successfully!
+  </h2>
+  <script>
+
+// console.log("Hello world")
+// console.log(userPayload.input_data['user_id'])
+// this.http.get('https://jsonplaceholder.typicode.com/users').subscribe(
+//   data => console.log("Payload = ", userPayload)
+// );
+console.log(JSON.stringify({userPayload}))
+
+    
+    </script>
+</div>
+      </div>
+    <div class="formContainer" id="sawo-container" *ngIf="!isLoggedIn">
+    </div>
+  </section>
+</div>
